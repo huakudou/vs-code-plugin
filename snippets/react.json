@@ -1,0 +1,92 @@
+{
+  "edfunc": {
+    "prefix": "edfunc",
+    "body": [
+      "export default function $1() {",
+      "  return (",
+      "    <div>$2</div>",
+      "  );",
+      "}"
+    ],
+    "description": "快速创建导出默认react组件"
+  },
+  "ecfunc": {
+    "prefix": "ecfunc",
+    "body": [
+      "export const $1 = () => {",
+      "  return (",
+      "    <div>$2</div>",
+      "  );",
+      "}"
+    ],
+    "description": "快速创建导出react组件"
+  },
+  "func": {
+    "prefix": "func",
+    "body": [
+      "function $1() {",
+      "  return (",
+      "    <div>$2</div>",
+      "  );",
+      "}"
+    ],
+    "description": "快速创建react组件"
+  },
+  "useState": {
+    "prefix": "ustate",
+    "body": [
+      "const [ ${1}, set${1/(.*)/${1:/capitalize}/} ] = React.useState($2)"
+    ],
+    "description": "快速创建useState"
+  },
+  "useMemo": {
+    "prefix": "umemo",
+    "body": [
+      "const $1= React.useMemo(() => {",
+      "      $2",
+      "  }, [$3]);"
+    ],
+    "description": "快速创建useMemo"
+  },
+  "useRef": {
+    "prefix": "uref",
+    "body": [
+      "const $1Ref = React.useRef($2);"
+    ],
+    "description": "快速创建useRef"
+  },
+  "useCallback": {
+    "prefix": "ucallback",
+    "body": [
+      "const $1 = React.useCallback(($2) => {",
+      "    $3",
+      "  }, [$4]);"
+    ],
+    "description": "快速创建useCallback"
+  },
+  "useEffect": {
+    "prefix": "ueffect",
+    "body": [
+      "React.useEffect(() => {",
+      "    $1",
+      "  }, [$2]);"
+    ],
+    "description": "快速创建useEffect"
+  },
+  "useTranslation": {
+    "prefix": "utranslation",
+    "body": [
+      "const { t$1 } = useTranslation()"
+    ],
+    "description": "快速创建useTranslation"
+  },
+  "useRequest": {
+    "prefix": "urequest",
+    "body": [
+      "const { runAsync: $1, loading: $2 } = useRequest(async ($3) => {",
+      "    $4",
+      "  });"
+    ],
+    "description": "快速创建useRequest"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "name": "ReactHoks-snippets",
+  "displayName": "react hooks 非常实用的代码片段",
+  "description": "react hooks 非常实用的代码片段。输入简写字符，会自动创建相关代码片段，输入后，按 tab 键光标会自动跳转到下一个输入位置",
+  "version": "1.0.0",
+  "publisher": "ccl",
+  "icon": "logo.png",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "license": "MIT",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "catCoding.start",
+        "title": "TEST"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "catCoding.start",
+        "key": "ctrl+alt+v",
+        "mac": "ctrl+alt+v"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/sodesign.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/markdown-it": "^12.2.3",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.73.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "@vscode/test-electron": "^2.2.0",
+    "eslint": "^8.26.0",
+    "glob": "^8.0.3",
+    "markdown-it": "^13.0.1",
+    "mocha": "^10.1.0",
+    "typescript": "^4.8.4"
+  }
+}
