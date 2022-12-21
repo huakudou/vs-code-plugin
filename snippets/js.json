@@ -1,0 +1,63 @@
+{
+  "forEach": {
+    "prefix": ".foreach",
+    "body": [
+      ".forEach((${1|item,element,child|}) => {",
+      "  $2",
+      "})$3;"
+    ],
+    "description": "快速创建forEach函数体"
+  },
+  "reduce": {
+    "prefix": ".reduce",
+    "body": [
+      ".reduce((${1:result}, ${2|item,element,child|}) => {",
+      "  $3",
+      "  return result;",
+      "},${4:initValue});"
+    ],
+    "description": "快速创建reduce函数体"
+  },
+  "map": {
+    "prefix": ".map",
+    "body": [
+      ".map((${1|item,element,child|}) => $2);"
+    ],
+    "description": "快速创建map函数体"
+  },
+  "filter": {
+    "prefix": ".filter",
+    "body": [
+      ".filter((${1|item,element,child|}) => $2);"
+    ],
+    "description": "快速创建filter函数体"
+  },
+  "find": {
+    "prefix": ".find",
+    "body": [
+      ".find((${1|item,element,child|}) => $2);"
+    ],
+    "description": "快速创建filter函数体"
+  },
+  "findIndex": {
+    "prefix": ".findindex",
+    "body": [
+      ".findIndex((${1|item,element,child|}) => $2);"
+    ],
+    "description": "快速创建findIndex函数体"
+  },
+  "some": {
+    "prefix": ".some",
+    "body": [
+      ".some((${1|item,element,child|}) => $2);"
+    ],
+    "description": "快速创建some函数体"
+  },
+  "every": {
+    "prefix": ".every",
+    "body": [
+      ".every((${1|item,element,child|}) => $2);"
+    ],
+    "description": "快速创建every函数体"
+  }
+}

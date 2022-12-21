@@ -40,6 +40,22 @@
         "path": "./snippets/react.json"
       },
       {
+        "language": "javascriptreact",
+        "path": "./snippets/js.json"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/js.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/js.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/js.json"
+      },
+      {
         "language": "typescriptreact",
         "path": "./snippets/sodesign.json"
       }

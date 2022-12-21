@@ -1,30 +1,8 @@
 {
-  "edfunc": {
-    "prefix": "edfunc",
-    "body": [
-      "export default function $1() {",
-      "  return (",
-      "    <div>$2</div>",
-      "  );",
-      "}"
-    ],
-    "description": "快速创建导出默认react组件"
-  },
-  "ecfunc": {
-    "prefix": "ecfunc",
-    "body": [
-      "export const $1 = () => {",
-      "  return (",
-      "    <div>$2</div>",
-      "  );",
-      "}"
-    ],
-    "description": "快速创建导出react组件"
-  },
-  "func": {
+  "React Function": {
     "prefix": "func",
     "body": [
-      "function $1() {",
+      "function ${1:Name}() {",
       "  return (",
       "    <div>$2</div>",
       "  );",
@@ -32,40 +10,58 @@
     ],
     "description": "快速创建react组件"
   },
+  "Arrow Function": {
+    "prefix": "afunc",
+    "body": [
+      "const ${1:name} = ($2) => {",
+      "  $3",
+      "}"
+    ],
+    "description": "快速创建箭头函数"
+  },
+  "Function": {
+    "prefix": "func",
+    "body": [
+      "function ${1:name}($2) {",
+      "  $3",
+      "}"
+    ],
+    "description": "快速创建Function函数"
+  },
   "useState": {
-    "prefix": "ustate",
+    "prefix": "usestate",
     "body": [
       "const [ ${1}, set${1/(.*)/${1:/capitalize}/} ] = React.useState($2)"
     ],
     "description": "快速创建useState"
   },
   "useMemo": {
-    "prefix": "umemo",
+    "prefix": "usememo",
     "body": [
-      "const $1= React.useMemo(() => {",
+      "const ${1:name}= React.useMemo(() => {",
       "      $2",
       "  }, [$3]);"
     ],
     "description": "快速创建useMemo"
   },
   "useRef": {
-    "prefix": "uref",
+    "prefix": "useref",
     "body": [
       "const $1Ref = React.useRef($2);"
     ],
     "description": "快速创建useRef"
   },
   "useCallback": {
-    "prefix": "ucallback",
+    "prefix": "usecallback",
     "body": [
-      "const $1 = React.useCallback(($2) => {",
+      "const ${1:name} = React.useCallback(($2) => {",
       "    $3",
       "  }, [$4]);"
     ],
     "description": "快速创建useCallback"
   },
   "useEffect": {
-    "prefix": "ueffect",
+    "prefix": "useeffect",
     "body": [
       "React.useEffect(() => {",
       "    $1",
@@ -74,14 +70,14 @@
     "description": "快速创建useEffect"
   },
   "useTranslation": {
-    "prefix": "utranslation",
+    "prefix": "usetranslation",
     "body": [
       "const { t$1 } = useTranslation()"
     ],
     "description": "快速创建useTranslation"
   },
   "useRequest": {
-    "prefix": "urequest",
+    "prefix": "userequest",
     "body": [
       "const { runAsync: $1, loading: $2 } = useRequest(async ($3) => {",
       "    $4",
