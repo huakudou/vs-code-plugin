@@ -10,24 +10,6 @@
     ],
     "description": "快速创建react组件"
   },
-  "Arrow Function": {
-    "prefix": "afunc",
-    "body": [
-      "const ${1:name} = ($2) => {",
-      "  $3",
-      "}"
-    ],
-    "description": "快速创建箭头函数"
-  },
-  "Function": {
-    "prefix": "func",
-    "body": [
-      "function ${1:name}($2) {",
-      "  $3",
-      "}"
-    ],
-    "description": "快速创建Function函数"
-  },
   "useState": {
     "prefix": "usestate",
     "body": [

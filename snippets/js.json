@@ -1,4 +1,22 @@
 {
+  "Function": {
+    "prefix": "func",
+    "body": [
+      "function ${1:name}($2) {",
+      "  $3",
+      "}"
+    ],
+    "description": "快速创建Function函数"
+  },
+  "Arrow Function": {
+    "prefix": "func",
+    "body": [
+      "const ${1:name} = ($2) => {",
+      "  $3",
+      "}"
+    ],
+    "description": "快速创建箭头函数"
+  },
   "forEach": {
     "prefix": ".foreach",
     "body": [
@@ -14,7 +32,7 @@
       ".reduce((${1:result}, ${2|item,element,child|}) => {",
       "  $3",
       "  return result;",
-      "},${4:initValue});"
+      "},${4:[]});"
     ],
     "description": "快速创建reduce函数体"
   },
@@ -59,5 +77,21 @@
       ".every((${1|item,element,child|}) => $2);"
     ],
     "description": "快速创建every函数体"
+  },
+  "sort": {
+    "prefix": ".sort",
+    "body": [
+      ".sort((a, b) => {",
+      "    /**",
+      "      返回值\t   排序顺序",
+      "       > 0\t     a 在 b 后",
+      "       < 0\t     a 在 b 前",
+      "       === 0\t   保持 a 和 b 的顺序",
+      "    */",
+      "    $1",
+      "    return 0;",
+      "  });"
+    ],
+    "description": "快速创建sort函数体"
   }
 }

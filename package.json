@@ -1,5 +1,5 @@
 {
-  "name": "ReactHoks-snippets",
+  "name": "react-hooks-js-snippets",
   "displayName": "react hooks 非常实用的代码片段",
   "description": "react hooks 非常实用的代码片段。输入简写字符，会自动创建相关代码片段，输入后，按 tab 键光标会自动跳转到下一个输入位置",
   "version": "1.0.0",
