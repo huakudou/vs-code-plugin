@@ -13,7 +13,7 @@
   "useState": {
     "prefix": "usestate",
     "body": [
-      "const [ ${1}, set${1/(.*)/${1:/capitalize}/} ] = React.useState($2)"
+      "const [${1}, set${1/(.*)/${1:/capitalize}/}] = React.useState($2);"
     ],
     "description": "快速创建useState"
   },
